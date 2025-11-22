@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap");
+@import "tailwindcss";
+@layer base {
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+}
+/* Hide scrollbar fully */
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-beauty::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-beauty::-webkit-scrollbar-track {
+  background: #ebe6ff;
+  border-radius: 3px;
+}
+
+.scroll-beauty::-webkit-scrollbar-thumb {
+  background: #8c78ff;
+  border-radius: 3px;
+}
+
+.scroll-beauty::-webkit-scrollbar-thumb:hover {
+  background: #5d4bf7;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 0.25s ease-out;
+}
