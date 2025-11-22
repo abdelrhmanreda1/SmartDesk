@@ -6,7 +6,7 @@ export default function ChatMessageList({ messages }) {
     <div
       className="
         flex flex-col gap-6 py-4 
-       md:h-[390px]  h-[290px]
+       md:h-[390px]  h-[330px]
         overflow-y-scroll no-scrollbar 
         
         w-full 

@@ -39,7 +39,7 @@ export default function Sidebar() {
 
         <button
           onClick={() => setOpen(false)}
-          className="absolute top-4 right-4 text-white text-xl"
+          className="absolute top-4 right-4 text-white text-xl cursor-pointer"
         >
           ×
         </button>

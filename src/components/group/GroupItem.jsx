@@ -34,7 +34,7 @@ export default function GroupItem({
       className={`
         relative flex items-center gap-3 px-4 py-3 cursor-pointer
         transition-all duration-200 rounded-xl
-        ${active ? "bg-[#f3f0ff] -ml-3 pl-7" : "hover:bg-[#f7f6fb]"}
+        ${active ? "bg-[#f3f0ff] -ml-3 pl-7" : "hover:bg-[#eeeaff]"}
       `}
     >
       {active && (

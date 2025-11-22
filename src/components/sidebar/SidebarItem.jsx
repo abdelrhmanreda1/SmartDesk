@@ -6,17 +6,25 @@ export default function SidebarItem({ icon, label, to, badge, collapsed }) {
     <NavLink to={to} className="block relative">
       {({ isActive }) => (
         <div className="relative">
+          {isActive && (
+            <>
+              <b className="curve-top"></b>
+              <b className="curve-bottom"></b>
+            </>
+          )}
+
           <div
             className={`
-              relative flex items-center px-4 py-3  text-md transition-all  duration-300  bg-[#7659ff] tracking-[1px]
-              ${collapsed ? "justify-center" : "gap-3"}
-              rounded-s-[40px]
-              ${
-                isActive
-                  ? "bg-[#F8F7FC] text-[#8170D2]"
-                  : "text-white/80 hover:text-white rounded-[40px]!"
-              }
-            `}
+          relative flex items-center px-4 py-3 tracking-[1px]
+          ${collapsed ? "justify-center" : "gap-3"}
+          rounded-s-[40px]
+          transition-all duration-300
+          ${
+            isActive
+              ? "bg-[#F8F7FC] text-[#8170D2]"
+              : "text-white/80 hover:text-white"
+          }
+        `}
           >
             <FontAwesomeIcon icon={icon} className="text-[17px]" />
 

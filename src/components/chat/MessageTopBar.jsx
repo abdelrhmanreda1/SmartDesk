@@ -4,22 +4,17 @@ import {
   faSearch,
   faEllipsisVertical,
   faChevronDown,
-  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function MessageTopBar({ searchTerm, onSearchChange }) {
-  const openSidebar = () =>
-    window.dispatchEvent(new CustomEvent("open-sidebar"));
 
   return (
     <div className="w-full flex items-center justify-between px-4 md:px-8 py-4 md:py-6">
+
+      {/* SEARCH BOX */}
       <div className="flex items-center bg-white shadow-sm rounded-full px-4 md:px-5 py-2 md:py-3 border border-gray-100 w-full md:w-[480px]">
-        <button
-          className="md:hidden mr-3 bg-[#7659ff] text-white w-9 h-9 rounded-xl flex items-center justify-center"
-          onClick={openSidebar}
-        >
-          <FontAwesomeIcon icon={faBars} />
-        </button>
+
+        {/* ❌ اتلغى زرار فتح السايدبار */}
 
         <button className="hidden md:flex items-center gap-2 text-[#939295] text-sm">
           All Category
@@ -45,6 +40,7 @@ export default function MessageTopBar({ searchTerm, onSearchChange }) {
         />
       </div>
 
+      {/* RIGHT SIDE */}
       <div className="hidden md:flex items-center gap-4 relative">
         <div className="relative w-6 h-6 flex items-center justify-center">
           <FontAwesomeIcon

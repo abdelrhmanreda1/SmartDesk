@@ -66,7 +66,7 @@ export default function GroupList({ onSelectUser }) {
 
   if (isLoading) {
     return (
-      <div className="w-[270px] h-[590px] bg-[#f8f7fc] rounded-3xl p-4 shadow flex items-center justify-center">
+      <div className="w-[270px]  h-[590px] bg-[#f8f7fc] rounded-3xl p-4 shadow flex items-center justify-center">
         <LoadingUsers />
       </div>
     );
@@ -81,7 +81,7 @@ export default function GroupList({ onSelectUser }) {
   }
 
   return (
-    <div className="w-[270px] h-[590px] bg-[#f8f7fc] rounded-3xl p-4 flex flex-col gap-3 overflow-y-auto no-scrollbar hover:scroll-beauty shadow">
+    <div className="w-[270px] mx-auto h-[590px] bg-[#f8f7fc] rounded-3xl p-4 flex flex-col gap-3 overflow-y-auto no-scrollbar hover:scroll-beauty shadow">
       <GroupsSection
         groups={displayedGroups}
         totalCount={groupData.length}

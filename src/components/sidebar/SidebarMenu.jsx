@@ -22,7 +22,7 @@ export default function SidebarMenu() {
   return (
     <div
       className={`
-        bg-[#7659ff]
+        
         rounded-e-3xl 
         py-6 
         flex flex-col justify-between 

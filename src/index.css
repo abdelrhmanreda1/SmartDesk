@@ -44,3 +44,63 @@
 .animate-slide-left {
   animation: slide-left 0.25s ease-out;
 }
+
+.curve-top {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #f8f7fc;
+}
+.curve-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7659ff;
+  border-bottom-right-radius: 20px;
+}
+.curve-bottom {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #f8f7fc;
+}
+.curve-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7659ff;
+  border-top-right-radius: 20px;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f3f0ff; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #7659ff; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6045e2; 
+}
